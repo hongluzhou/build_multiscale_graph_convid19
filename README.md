@@ -3,7 +3,14 @@
 | Name | Description |
 | ------------- | ------------- |
 | Region type | {Airport, Train Station, Ferry Port, City, State, Country, Continent} |
-| **Graph nodes** | **{City, State, Country, Continent}** |
+| **Graph nodes** | **{City, State, Country, Continent}**  |
+
+Note: 
+- City contains Airport, Train Station and Ferry Port.
+- State contains City.
+- Country contains State.
+- Continent contains Country.
+
 
 ### Region Property
 Centriods: Centriods are in form of (Latitude, Longitude):
