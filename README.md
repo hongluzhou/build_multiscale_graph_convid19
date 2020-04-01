@@ -1,5 +1,3 @@
-# build_multiscale_graph_convid19
-
 ## Regions
 
 | Name | Description |
@@ -79,7 +77,7 @@ Basically:
 3. Find current all cities'  train stations, ferry ports respectively according to `airports-extended.dat`, `airports-extended.dat`. Meanwhile find all train stations, ferry ports.
 4. Find all states = {states of current all cities} + {all states in `JHU COVID-19 database`} (source: `regions.csv`, `airports.json` and `UID_ISO_FIPS_LookUp_Table.csv`).
 5. Find all countries = {countries of current all states} + {all countries in `JHU COVID-19 database`} (source: `regions.csv`, `airports.json` and `UID_ISO_FIPS_LookUp_Table.csv`).
-6. Find all continents = {continents of current all countries} (source: `regions.csv` and `airports.json`).
+6. Find all continents = {actual all continents} (source: `regions.csv` and `airports.json`).
 
 
 ## Data source
@@ -97,6 +95,7 @@ Basically:
 
 
 ## Preprocessed dataset 
+```
 ./output/
 ├── all_train.pickle
 ├── all_ferry.pickle
@@ -126,6 +125,7 @@ Basically:
 ├── country2continent.pickle
 
 └── flight.txt
+```
 
 |  Data name | Data Type | Description |
 | ------------- | ------------- | ------------- |
