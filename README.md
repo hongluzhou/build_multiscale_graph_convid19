@@ -1,3 +1,6 @@
+# Purpose:
+Build multiscale graph where nodes are regions (City, State, Country, Continent) for convid19 simulation. Graph structure (within-scale and across-scale) and node initial static properties (centroids, population, #airports, #train station, #ferry ports) can be built.
+
 ## Regions
 
 | Name | Description |
